@@ -11,5 +11,9 @@ export default defineConfig({
       text: 'Example',
       link: '/example',
     },
+     {
+      text: 'Exhibition building',
+      link: '/exhibition-building',
+    },
   ],
 })
