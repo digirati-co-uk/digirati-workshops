@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@types/react": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "wrangler": "^4.3.0"
   }
 }
