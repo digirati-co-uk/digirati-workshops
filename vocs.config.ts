@@ -8,7 +8,7 @@ export default defineConfig({
       link: '/getting-started',
     },
     {
-      text: 'What you'll need for the workshop',
+      text: 'What you need for the workshop',
       link: '/what-you-will-need',
     },
     {
