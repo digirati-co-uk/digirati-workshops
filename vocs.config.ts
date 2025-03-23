@@ -3,17 +3,21 @@ import { defineConfig } from 'vocs'
 export default defineConfig({
   title: 'Docs',
   sidebar: [
+     {
+      text: 'What you need for the workshop',
+      link: '/what-you-will-need',
+    },
+    {
+      text: 'IIIF content to Explore',
+      link: '/examples-of-iiif-to-explore',
+    },
     {
       text: 'Getting Started',
       link: '/getting-started',
     },
     {
-      text: 'What you need for the workshop',
-      link: '/what-you-will-need',
-    },
-    {
-      text: 'Example',
-      link: '/example',
+      text: 'Manifest Editor',
+      link: '/manifest-editing',
     },
      {
       text: 'Exhibition building',
