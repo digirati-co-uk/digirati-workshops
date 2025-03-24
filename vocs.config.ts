@@ -1,7 +1,7 @@
 import { defineConfig } from 'vocs'
 
 export default defineConfig({
-  title: 'Docs',
+  title: 'Change this to workshop title',
   sidebar: [
      {
       text: 'What you need for the workshop',
