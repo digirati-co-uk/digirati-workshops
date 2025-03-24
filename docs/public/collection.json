@@ -1,0 +1,20 @@
+{
+	"id": "https://digirati-workshops.pages.dev/collection.json",
+	"type": "Collection",
+	"label": {
+		"en": ["IIIF Content to explore"],
+		"nl": ["IIIF-inhoud om te verkennen"]
+	},
+	"items": [
+		{
+			"id": "https://heritage.tudelft.nl/iiif/collection.json",
+			"type": "Collection",
+			"label": { "en": ["TU Delft"] }
+		},
+		{
+			"id": "https://view.nls.uk/collections/top.json",
+			"type": "Collection",
+			"label": { "en": ["National Library of Scotland"] }
+		}
+	]
+}
