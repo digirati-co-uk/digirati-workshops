@@ -33,5 +33,15 @@ export default defineConfig({
 			text: "Exhibition building",
 			link: "/exhibition-building",
 		},
+		{
+			text: "Manifest Editor Guide",
+			collapsed: false,
+			items: [
+				{
+					link: "/me/getting-started",
+					text: "Getting started",
+				},
+			],
+		},
 	],
 });
