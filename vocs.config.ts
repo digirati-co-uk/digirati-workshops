@@ -41,6 +41,10 @@ export default defineConfig({
 					link: "/me/getting-started",
 					text: "Getting started",
 				},
+				{
+					link: "/me/adding-resources",
+					text: "Adding resources",
+				},
 			],
 		},
 	],
