@@ -1,0 +1,29 @@
+# IIIF enabled images
+
+It's worth highlighting the power of image deep-zoom - visualising this - see the great work that Jules (and others) produced with this interactive visualization of a IIIF tile pyramid: https://observablehq.com/@allmaps/tile-pyramid
+
+
+When considering building exhibitions, leveraging the possibilities that the IIIF Image API provides will be something you might want to focus on. This might be to support cropping a portion of image, presenting a different view of an image etc.
+
+You can examine the image leveraging the power the Image API provides:
+
+Image Identifier | Region | Size | Rotation | Quality | Format
+
+Take an example IIIF Image: https://dlcs.digirati.io/iiif-img/62/1/24-PXL_20241010_073505256.MP.jpg/full/1024,/0/default.jpg
+
+Image Identifier -> https://dlcs.digirati.io/iiif-img/62/1/24-PXL_20241010_073505256.MP.jpg
+Region -> full
+Size -> 1024,
+Rotation -> 0
+Quality -> default
+Format -> .jpg
+
+You can experiment with the URL to see how changing some of these values changes how the image is presented when you re-request the image in your browser.
+
+For example, you might want to change the rotation to 180 - turning the image 180 degrees; or you might change the quality to ‘bitonal’ or ‘gray’. (*Note US spelling)
+
+These standard format URLs enable consistent interaction that can be leveraged by IIIF compatible viewers.
+
+
+
+For more details - please refer to the specification documentation https://iiif.io/api/image/3.0/
