@@ -1,7 +1,7 @@
 import { defineConfig } from "vocs";
 
 export default defineConfig({
-	title: "Change this to workshop title",
+	title: "Digital Exhibition Building with IIIF",
 	theme: {
 		accentColor: {
 			textAccent: { light: "#D75281", dark: "white" },
