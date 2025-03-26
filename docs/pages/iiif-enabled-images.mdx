@@ -1,7 +1,12 @@
+import { PyramidEmbed } from "../components/PyramidEmbed";
+
 # IIIF enabled images
 
 It's worth highlighting the power of image deep-zoom - visualising this - see the great work that Jules (and others) produced with this interactive visualization of a IIIF tile pyramid: https://observablehq.com/@allmaps/tile-pyramid
 
+<PyramidEmbed src="https://media.nga.gov/iiif/d902b68e-b9cc-448c-856c-9bf49745d31d/info.json" />
+
+[Try with your own IIIF](https://iiif-browser.netlify.app/iframe.html?globals=&args=&id=iiif-browser-v2--tile-pyramid&viewMode=story)
 
 When considering building exhibitions, leveraging the possibilities that the IIIF Image API provides will be something you might want to focus on. This might be to support cropping a portion of image, presenting a different view of an image etc.
 
@@ -20,10 +25,8 @@ Format -> .jpg
 
 You can experiment with the URL to see how changing some of these values changes how the image is presented when you re-request the image in your browser.
 
-For example, you might want to change the rotation to 180 - turning the image 180 degrees; or you might change the quality to ‘bitonal’ or ‘gray’. (*Note US spelling)
+For example, you might want to change the rotation to 180 - turning the image 180 degrees; or you might change the quality to ‘bitonal’ or ‘gray’. (\*Note US spelling)
 
 These standard format URLs enable consistent interaction that can be leveraged by IIIF compatible viewers.
-
-
 
 For more details - please refer to the specification documentation https://iiif.io/api/image/3.0/
