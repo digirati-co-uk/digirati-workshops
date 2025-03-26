@@ -32,7 +32,7 @@ From the Browser you can click on the URL at the top to go to a custom Collectio
 
 You can use the IIIF Browser to add images from existing IIIF collections and Manifests.
 
-#### Rijksmuseum
+### Rijksmuseum
 
 The Rijksmuseum has a collection of artworks and artifacts that can be explored. A proxy is
 available that allows you to grab IIIF Manifests from the resources. If you paste a URL for
@@ -50,7 +50,7 @@ Here you can see where to get the URLs from the object pages.
 
 <img src="/rijksmuseum.png" alt="Rijksmuseum" className="w-1/2" />
 
-#### Allard Pierson image bank
+### Allard Pierson image bank
 
 The Allard Pierson's image bank contains digital images of archaeological objects, paintings, prints, maps, photos and slides, as well as books and manuscripts scanned in their entirety.
 
@@ -62,7 +62,44 @@ https://uvaerfgoed.nl/viewer/index/
 
 <TheseusLink href="https://uvaerfgoed.nl/viewer/api/v1/records/11245_3_29718/manifest/" label="Open example Manifest" />
 
-## Leiden University Libraries
+### 4TU.ResearchData
+
+Available at: https://www.val.town/v/sammeltassen/iiif44tu is a proxy to make available IIIF images.
+
+IIIF Presentation API for 4TU.ResearchData.
+
+URL scheme:
+
+https://sammeltassen-iiif44tu.web.val.run/[datasetUUID]
+
+Examples:
+
+https://sammeltassen-iiif44tu.web.val.run/e3f72cb2-9432-4ae9-a353-67f22dbab590
+https://sammeltassen-iiif44tu.web.val.run/9a2b38e4-e87f-4600-8fe1-1989f4155b1d
+
+<TheseusLink
+  href="https://sammeltassen-iiif44tu.web.val.run/e3f72cb2-9432-4ae9-a353-67f22dbab590"
+  label="Open 4TU Manifest"
+/>
+
+If the dataset is private you need to create a token and include it as a query param:
+https://sammeltassen-iiif44tu.web.val.run/[datasetUUID]?token=[token]
+
+### National Archives
+
+https://www.nationaalarchief.nl/
+
+All images are IIIF but you will need something like the DetektIIIF browser extensions to get the links: https://seige.digital/en/detektiiif/
+
+Alternatively you can browse their Archive using a proxy:
+https://data.globalise.huygens.knaw.nl/manifests/maps/collection.json
+
+<TheseusLink
+  href="https://data.globalise.huygens.knaw.nl/manifests/maps/collection.json"
+  label="Open IIIF Collection"
+/>
+
+### Leiden University Libraries
 
 Navigating to their Collections overview https://digitalcollections.universiteitleiden.nl/ you can access items in that collection by theme or type, and then view an individual Collection record for example:
 
@@ -74,7 +111,7 @@ IIIF Manifest URL is presented as part of a link to an advanced viewer (Mirador)
 
 https://digitalcollections.universiteitleiden.nl/iiif_manifest/item:3715610/manifest
 
-#### BnF Gallica
+### BnF Gallica
 
 An extensive resource - you can explore by Topic (https://gallica.bnf.fr/accueil/en/html/accueil-en) to find some content that may be of interest across a range of areas. Selecting a topic (Geography and Maps for example): https://gallica.bnf.fr/selections/fr/html/geographie-et-cartographie, you can navigate to content such as https://gallica.bnf.fr/selections/fr/html/images/photographies-de-la-societe-de-geographie-acces-geographique
 
@@ -82,13 +119,13 @@ Selecting an object from the search results, viewing it in their viewer, you can
 
 i.e. https://gallica.bnf.fr/iiif/ark:/12148/btv1b8492135q/manifest.json
 
-#### WikiData
+### WikiData
 
 As mentioned on the IIIF Guides, Wikidata has a property for IIIF Manifests which enables queries to be created that filter and retrieve manifests if they match other Wikidata properties. You can use the examples listed here: https://iiif.io/guides/guides/www.wikidata.org/ which generate links to the manifest using the Mirador viewer.
 
 There is also an example configured for Theseus here: https://w.wiki/DaXE
 
-#### Wellcome
+### Wellcome
 
 The Wellcome Collection has various IIIF endpoints available to browse through from their archives.
 
@@ -97,7 +134,7 @@ The Wellcome Collection has various IIIF endpoints available to browse through f
   label="Wellcome Collection"
 />
 
-#### Northwestern University Libraries
+### Northwestern University Libraries
 
 The Digital collections at Northwestern University Libraries are available online as a IIIF Collection that
 you can browse through.
@@ -116,7 +153,7 @@ for the images. Some providers do not support IIIF Presentation APIs (Collection
 
 ![](./add-image-service.jpg)
 
-#### NLS collection
+### NLS collection
 
 One provider that supports IIIF Images is the National Library of Scotland Map Collection.
 
@@ -135,7 +172,7 @@ to from other pages. The format also needs to be supported by browsers, so forma
 
 There are a few sources where you can find some static images to include in your Manifests.
 
-#### The CDLI Collection
+### The CDLI Collection
 
 On this CDLI collection website high-resolution images are available of the tablets.
 
@@ -151,7 +188,7 @@ If you intend to publish your IIIF Manifests ensure you should ensure you have f
 and include any rights statements and required statements.
 :::
 
-#### Nasa Images
+### Nasa Images
 
 Generate a IIIF Collection using a search term from the NASA photo archive.
 
