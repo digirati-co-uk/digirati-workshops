@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.vocs_NavLogo_title {
+	font-size: 1em;
+}

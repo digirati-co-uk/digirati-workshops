@@ -1,6 +1,94 @@
 import { Rijksmuseum } from "../components/Rijksmuseum";
+import { NasaProxy } from "../components/NasaProxy";
+import { TheseusLogo, TheseusLink } from "../components/TheseusLogo";
 
 # IIIF content to Explore
+
+Given our location for the workshop today, where better to start than at TU Delft - you can navigate their IIIF collection from here: (https://heritage.tudelft.nl/iiif/collection.json )
+
+Using Theseus from the viewer tools, you can navigate through the collection - simply open Theseus and paste in the Collection URL or use the link:
+
+For eaxmple:
+
+```
+https://theseusviewer.org/?iiif-content={URL}
+```
+
+<TheseusLink href="https://heritage.tudelft.nl/iiif/collection.json" />
+
+## Existing IIIF Collections
+
+You can use the IIIF Browser to add images from existing IIIF collections and Manifests.
+
+#### Delft
+
+<TheseusLink href="https://heritage.tudelft.nl/iiif/collection.json" label="TUDelft" />
+
+#### Northwestern University Libraries
+
+<TheseusLink
+  href="https://api.dc.library.northwestern.edu/api/v2/collections?as=iiif"
+  label="Northwestern University Libraries"
+/>
+
+#### Rijksmuseum
+
+Exhibitions landing page with “10 things series”
+
+https://www.rijksmuseum.nl/en/stories/10-things/story/10-remarkable-women
+
+Jules' proxy for Collection content at Rijksmuseum: (https://www.val.town/v/sammeltassen/rijks)
+
+![Rijksmuseum](/rijksmuseum.png)
+
+<Rijksmuseum />
+
+#### University of Amsterdam
+
+https://uvaerfgoed.nl/viewer/index/ -> has IIIF Manifests
+
+![University of Amsterdam](/uvaerfgoed.png)
+
+#### Wellcome
+
+<TheseusLink
+  href="https://iiif.wellcomecollection.org/presentation/v3/collections/archives"
+  label="Wellcome Collection"
+/>
+
+[Open in Manifest Editor](https://manifest-editor.digirati.services/share?action=preview&iiif-content=https://digirati-co-uk.github.io/wunder.json)
+
+## IIIF Image Services
+
+((Image services screenshot))
+
+####
+
+#### NLS collection
+
+## Static images
+
+You can add static images
+
+((Static images screenshot))
+
+#### The CDLI Collection
+
+Participant request: https://cdli.mpiwg-berlin.mpg.de/
+These are static images; would that work…?
+https://cdli.mpiwg-berlin.mpg.de/dl/photo/P000001.jpg
+
+#### Nasa Images
+
+Generate a IIIF Collection using a search term from the NASA photo archive.
+
+<NasaProxy />
+
+:::info
+You can paste the URL of this collection into the IIIF Browser in the Manifest Editor.
+:::
+
+---
 
 ## TU Delft
 
@@ -26,10 +114,6 @@ https://digitalcollections.universiteitleiden.nl/iiif_manifest/item:3715610/mani
 
 https://archief.amsterdam/beeldbank/ - Image collection, but are there IIIF resources?
 
-https://uvaerfgoed.nl/viewer/index/ -> has IIIF Manifests
-
-![University of Amsterdam](/uvaerfgoed.png)
-
 Are there useful resources to point to in the Time Machine? https://www.amsterdamtimemachine.nl/data/
 
 ## Utrecht University Libraries
@@ -37,18 +121,6 @@ Are there useful resources to point to in the Time Machine? https://www.amsterda
 See: https://observablehq.com/@allmaps/georeferencing-uu
 
 ![Utrecht University Libraries](/utrecht.png)
-
-## Rijksmuseum
-
-Exhibitions landing page with “10 things series”
-
-https://www.rijksmuseum.nl/en/stories/10-things/story/10-remarkable-women
-
-Jules' proxy for Collection content at Rijksmuseum: (https://www.val.town/v/sammeltassen/rijks)
-
-![Rijksmuseum](/rijksmuseum.png)
-
-<Rijksmuseum />
 
 ##National Library of Scotland
 
@@ -77,12 +149,6 @@ https://api.dc.library.northwestern.edu/api/v2/collections?as=iiif
 ## Wellcome
 
 https://iiif.wellcomecollection.org/presentation/v3/collections/archives
-
-## The CDLI Collection
-
-Participant request: https://cdli.mpiwg-berlin.mpg.de/
-These are static images; would that work…?
-https://cdli.mpiwg-berlin.mpg.de/dl/photo/P000001.jpg
 
 ## WikiData
 
