@@ -7,19 +7,23 @@ import { HomePage } from "vocs/components";
 <HomePage.Root>
   <HomePage.Logo />
   <HomePage.Tagline>March 26th 2025</HomePage.Tagline>
-  <HomePage.Description>
-    Building your own IIIF Manifests and creating an exhibition with those manifests.
-<p><ul><li>13:00 Welcome</li>
-<li>13:05 Introduction Dutch Digital Heritage Network (Enno Meijers)</li>
-<li>13:15 Introduction TU Delft Library</li>
-<li>13:30 Introduction Digirati</li>
-<li>13:50 Start workshop</li>
-<li>16:00 Presentations (using Presentation Mode!) & discussion / evaluating usage of tool</li>
-<li>17:00 Drinks</li></ul></p>
+  <div className="flex flex-col gap-8 mb-4">
+  
+    <h4
+      className="text-2xl mb-5"
+    >Building your own IIIF Manifests and creating an exhibition with those manifests.</h4>
+    
+    <ul className="w-full text-left py-4">
+        <li>13:00 Welcome</li>
+        <li>13:05 Introduction Dutch Digital Heritage Network (Enno Meijers)</li>
+        <li>13:15 Introduction TU Delft Library</li>
+        <li>13:30 Introduction Digirati</li>
+        <li>13:50 Start workshop</li>
+        <li>16:00 Presentations (using Presentation Mode!) & discussion / evaluating usage of tool</li>
+        <li>17:00 Drinks</li>
+    </ul>
 
-
-
-  </HomePage.Description>
+  </div>
   <HomePage.Buttons>
     <HomePage.Button href="/getting-started" variant="accent">
       Get started
