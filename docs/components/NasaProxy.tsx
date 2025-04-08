@@ -1,14 +1,22 @@
 import { useState } from "react";
+import { TheseusEmbed } from "./TheseusEmbed";
 
 export function NasaProxy() {
 	const [url, setUrl] = useState("Docked STS-132 Atlantis");
+	const [search, setSearch] = useState("Docked STS-132 Atlantis");
 
-	const urlEncoded = encodeURIComponent(url);
+	const urlEncoded = encodeURIComponent(search);
 	const iiifCollection = `https://nasa.stephen.wf/search/${urlEncoded}/1`;
+
+	const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		// Handle form submission logic here
+		setSearch(url);
+	};
 
 	return (
 		<div>
-			<div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+			<form onSubmit={onSubmit} className="flex gap-3 items-center mb-4">
 				<label style={{ fontWeight: "bold" }} htmlFor="nasa_search">
 					Enter a search term
 				</label>
@@ -19,7 +27,10 @@ export function NasaProxy() {
 					value={url}
 					onChange={(e) => setUrl(e.target.value)}
 				/>
-			</div>
+				<button className="border font-bold py-1 px-4 rounded" type="submit">
+					Search
+				</button>
+			</form>
 			<div className="p-2 bg-gray-50 rounded mb-4">
 				{url ? (
 					<div className="flex flex-col gap-2">
@@ -46,6 +57,8 @@ export function NasaProxy() {
 				) : (
 					<div>Invalid URL</div>
 				)}
+
+				<TheseusEmbed iiif-content={iiifCollection} />
 			</div>
 		</div>
 	);
