@@ -35,7 +35,7 @@ export function NasaProxy() {
 				{url ? (
 					<div className="flex flex-col gap-2">
 						<div className="flex gap-4">
-							<strong style={{ fontWeight: "bold" }}>Manifest URL:</strong>
+							<strong style={{ fontWeight: "bold" }}>Collection URL:</strong>
 							<a
 								style={{ color: "#007bff", textDecoration: "underline" }}
 								href={iiifCollection}
